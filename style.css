@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column; /* Ajouté pour organiser le titre et le formulaire verticalement */
+    text-align: center; /* Centrer le texte du titre */
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px; /* Espacement sous le titre */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #ff6b6b;
+    outline: none;
+    box-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
+}
+
+.erreur {
+    color: #ff6b6b;
+    font-size: 0.75rem;
+    height: 15px;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    visibility: hidden; /* Hidden by default */
+}
+.champ-invalide {
+    border: 1px solid red;
+}
+form button {
+    width: 100%;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e85858;
+}
+
+form button:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
+}
+

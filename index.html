@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form id="formulaire">
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+        <span id="erreur-nom" class="erreur"></span>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom">
+        <span id="erreur-prenom" class="erreur"></span>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+        <span id="erreur-email" class="erreur"></span>
+
+        <label for="birthdate">Date de naissance :</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <span id="erreur-birthdate" class="erreur"></span>
+
+        <label for="adress">Adresse :</label>
+        <input type="text" id="adress" name="adress">
+        <span id="erreur-adress" class="erreur"></span>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password">
+        <span id="erreur-password" class="erreur"></span>
+
+        <label for="confirmpassword">Confirmez votre mot de passe :</label>
+        <input type="password" id="confirmpassword" name="confirmpassword">
+        <span id="erreur-confirmpassword" class="erreur"></span>
+        
+    <br>
+
+        <button type="submit">Valider</button>
+
+    </form>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
